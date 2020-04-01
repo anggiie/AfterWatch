@@ -87,7 +87,6 @@ span
     float: left;
     height: 45px;
     position: initial;
-   
     border: 1px solid black;
     z-index: 1;
     flex-grow: 1;
@@ -119,7 +118,7 @@ form
 {
     background-color: inherit;
     border: 0;
-    color: black;
+    color: red;
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -128,6 +127,7 @@ form
     margin: 0;
     line-height: 18px;
     transition: all .3s ease;
+    -webkit-user-select: text
 }
 
 .rechercher

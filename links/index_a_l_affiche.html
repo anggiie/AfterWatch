@@ -11,8 +11,10 @@
     
 <style>
 .fond-h
-{background-color: transparent;
+{
+    background-color: transparent;
     position: fixed;
+    
 }
 .navig-main
 {
@@ -21,14 +23,14 @@
     padding-left: 1.5%;
 }
 .main-contenu
-    {
+{
         padding-top: 4%;
-    }
+}
 .contenu-main
-    {
+{
         padding-top: 3%;
         padding-bottom: 0;
-    }
+}
 .prise_de_tete
 {
     padding-top: 0;
@@ -42,65 +44,61 @@
 
         <div class="rep-contenu-h"></div>
 
-            <header class="fond-h">
+        <header class="fond-h">
 
-                <div class="contenu-h">
-                    <img class="logo-med logo" src="../img/afterwatch_logo.jpg"></img>
+            <div class="contenu-h">
+                <img class="logo-med logo" src="../img/afterwatch_logo.jpg"></img>
 
-                    <div class="partie-h-b">
+                <div class="partie-h-b">
 
-                        <div class="haut">
-                            <div class="barre-recherche">
-                                <div id="recherche-h">
-                                    <div class="recherche-1">
-                                        <div class="recherche-2">
-                                            <div class="recherche-auto-flex">   
-                                            <svg class="icon icon--plus" height="20px" version="1" viewBox="0 0 5 5" width="20px" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z"/>
-                                            </svg>
-                                            <input class="h-recherche" type="search" placeholder="recherche un film.." value="">
-                                            </div>
-                                        </div>
-                                    </div>    
+                    <div class="haut">
+                        <div class="barre-recherche">
+                            <div id="recherche-h">
+                                <div class="recherche-auto-flex">   
+                                <form>
+                                <input list="films" class="h-recherche" type="search" id="site-search" name="searchFilms" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content">
+                                <datalist id="films"></datalist>
+                                <button class="buttonr">Rechercher</button>
+                                </form>
                                 </div>
-                                <a class="rechercher" href="/search">Rechercher</a>
                             </div>
-                        
-                        <div class="co-et-regist"><!--parties connexion et inscripton-->
-                            <span class="connect" data-rel="btn-connect">Connexion</span><!--ici pour la connexion de l'utilisateur-->
-                            <p class="rien"></p>
-                            <a class="registrer" href="">Inscription</a><!--ici pour l'inscription-->
                         </div>
-                        <div><!--je dois réfléchir à la gardée ou non--></div>
-                        </div>
+                    
+                    <div class="co-et-regist"><!--parties connexion et inscripton-->
+                        <a class="connect" data-rel="btn-connect" href="">Connexion</a><!--ici pour la connexion de l'utilisateur-->
+                        <p class="rien"></p>
+                        <a class="registrer" data-rel="btn-registrer" href="">Inscription</a><!--ici pour l'inscription-->
+                    </div>
+                    
+                    </div>
 
-                        <div class="bas">
-                            <nav class="barre-menus">
-                                <div class="barre-menus-navig">
-                                    <div class="navig-list">
-                                        <ul class="navig-main">
-                                            <li class="navig-main-item">
-                                                <a href="../index_accueil.html">Accueil</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="index_futures_sorties.html">Les futures sorties</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="mes_films_a_voir.html">Mes films à voir</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="mes_films_vu.html">Mes films vu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="bas">
+                        <nav class="barre-menus">
+                            <div class="barre-menus-navig">
+                                <div class="navig-list">
+                                    <ul class="navig-main">
+                                        <li class="navig-main-item">
+                                            <a href="../index_accueil.html">Accueil</a>
+                                        </li>
+                                        <li class="navig-main-item">
+                                            <a href="./links/index_futures_sorties.html">Les futures sorties</a>
+                                        </li>
+                                        <li class="navig-main-item">
+                                            <a href="./links/mes_films_a_voir.html">Mes films à voir</a>
+                                        </li>
+                                        <li class="navig-main-item">
+                                            <a href="./links/mes_films_vu.html">Mes films vu</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </nav>
-                        </div>
-
+                            </div>
+                        </nav>
                     </div>
 
                 </div>
-            </header>
+
+            </div>
+        </header>
             
             <div class="main-contenu">
 

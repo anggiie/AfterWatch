@@ -83,16 +83,15 @@ span
     margin-left: 10%;
     width: calc(85% - 300px - 50px);
     display: flex;
-    align-items: center;
+    align-items: left;
     float: left;
     height: 45px;
-    position: relative;
+    position: initial;
     box-sizing: border-box;
     border: 1px solid black;
     z-index: 1;
     flex-grow: 1;
     border-radius: 10px;
-   justify-content: center;
 }
 form
 {
@@ -103,7 +102,7 @@ form
     background-color: #009193;
     border-radius: 15%;
     box-shadow: transparent;
-    margin-left: 100%;
+    margin-left: 160%;
 }
 .recherche-auto-flex
 {
@@ -145,10 +144,6 @@ form
     text-decoration: none;
     box-sizing: border-box;
 }
-.btn-search
-{
-
-}
 .co-et-regist
 {
     width: 200px;
@@ -189,12 +184,11 @@ form
 .barre-menus
 {
     width: calc(100% -150px);
-    margin-right: 25%;
     text-align: center;
     position: relative;
     top: 50%;
-    transform: translateY(-25%);
-    display: block;
+    transform: translateY(55%) translateX(-15%);
+    display: flex;
     box-sizing: border-box;
 }
 .barre-menus-navig

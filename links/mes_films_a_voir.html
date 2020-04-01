@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="../css/index.css">
 <style>
 .fond-h
-{background-color: transparent;
+{
+    background-color: transparent;
     position: fixed;
+}
+.barre-menus
+{
+    margin-right: 35%;
 }
 .navig-main
 {
@@ -27,7 +32,7 @@
 .prise_de_tete
 {
     padding-top: 0;
-}  
+}
 </style>
 </head>
 
@@ -47,26 +52,19 @@
                         <div class="haut">
                             <div class="barre-recherche">
                                 <div id="recherche-h">
-                                    <div class="recherche-1">
-                                        <div class="recherche-2">
-                                            <div class="recherche-auto-flex">   
-                                            <svg class="icon icon--plus" height="20px" version="1" viewBox="0 0 5 5" width="20px" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z"/>
-                                            </svg>
-                                            <input class="h-recherche" type="search" placeholder="recherche un film.." value="">
-                                            </div>
-                                        </div>
-                                    </div>    
+                                    <div class="recherche-auto-flex">   
+                                    <form>
+                                    <input class="h-recherche" type="search" id="site-search" name="searchFilms" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content">
+                                    <button class="buttonr">Rechercher</button>
+                                    </form>
+                                    </div>
                                 </div>
-                                <a class="rechercher" href="/search">Rechercher</a>
                             </div>
                         
                         <div class="co-et-regist"><!--parties connexion et inscripton-->
-                            <span class="connect" data-rel="btn-connect">Connexion</span><!--ici pour la connexion de l'utilisateur-->
+                            <a class="connect" data-rel="btn-connect" href="">Connexion</a><!--ici pour la connexion de l'utilisateur-->
                             <p class="rien"></p>
-                            <a class="registrer" href="">Inscription</a><!--ici pour l'inscription-->
-                        </div>
-                        <div><!--je dois réfléchir à la gardée ou non--></div>
+                            <a class="registrer" data-rel="btn-registrer" href="">Inscription</a><!--ici pour l'inscription-->
                         </div>
 
                         <div class="bas">

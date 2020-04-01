@@ -80,40 +80,30 @@ span
 }
 .barre-recherche
 {
-    margin-left: 88px;
-    width: calc(100% - 220px - 80px);
+    margin-left: 10%;
+    width: calc(85% - 300px - 50px);
     display: flex;
     align-items: center;
     float: left;
     height: 45px;
     position: relative;
     box-sizing: border-box;
-}
-#recherche-h
-{ 
-    border-radius: 10px;
-    display: flex;
-    flex-grow: 1;
-    box-sizing: border-box;
     border: 1px solid black;
-    height: 100%;
-    justify-content: center;
-    width: 100%;
     z-index: 1;
-}
-.recherche-1
-{
-    height: 45px;
-    width: 100%;
-
-}
-.recherche-2
-{
+    flex-grow: 1;
     border-radius: 10px;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    z-index: 1;
+   justify-content: center;
+}
+form
+{
+    display:flex;
+}
+.buttonr
+{
+    background-color: #009193;
+    border-radius: 15%;
+    box-shadow: transparent;
+    margin-left: 100%;
 }
 .recherche-auto-flex
 {
@@ -126,10 +116,7 @@ span
     width: 100%;
     box-sizing: border-box;
 }
-path
-{
-    border: 1px solid black;
-}
+
 .h-recherche
 {
     background-color: inherit;
@@ -138,7 +125,7 @@ path
     font-size: 18px;
     height: 100%;
     outline: 0;
-    padding: 10px 15px;
+    padding: 10px ;
     position: relative;
     width: 100%;
     margin: 0;
@@ -146,6 +133,7 @@ path
     transition: all .3s ease;
     box-sizing: border-box;
 }
+
 .rechercher
 {
     background-color: inherit;
@@ -156,6 +144,10 @@ path
     margin-left: 10px;
     text-decoration: none;
     box-sizing: border-box;
+}
+.btn-search
+{
+
 }
 .co-et-regist
 {

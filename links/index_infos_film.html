@@ -64,7 +64,6 @@ section
 {
     margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
 }
 #film button { 
@@ -84,7 +83,8 @@ section
    background: rgba(0,0,0,0.5);
 }
 
-a {
+.btn 
+{
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -101,8 +101,8 @@ a:hover{
     position: fixed;
     top: 20%;
     left: 10%;
-
 }
+
 iframe
 {
     width:680px; 
@@ -132,9 +132,11 @@ iframe
 <div id="film">
     <div class="flexbutton">
         <div class="button">
-            <a class="a-voir" href="#" target="_blank">Mes films à voir</a>
-            <a class="vu" href="#" target="_blank">Mes films vu</a>
-            <input  class="btn" type="button" value="Retour"  onclick="history.go(-1)">
+          <form>
+            <input class="film_a_voir button btn" type="button" value="Mes films à voir">
+            <input class="film_vu button btn" type="button" value="Mes films vu">
+            <input class="button btn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
+          </form>
         </div>
         </div> 
 </section>

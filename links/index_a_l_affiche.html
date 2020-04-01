@@ -10,25 +10,45 @@
     <link rel="stylesheet" href="../css/index.css">
     
 <style>
-
-.navig-main
+.bas
 {
+    height: calc(-5% - 2%);
+}
+.navig-main
+{   
     border: 3px solid #009193;
     border-radius: 10%;
     padding-left: 1.5%;
 }
-.main-contenu
-{
-        padding-top: 4%;
-}
+
 .contenu-main
 {
-        padding-top: 3%;
+        padding-top: 2%;
         padding-bottom: 0;
 }
 .prise_de_tete
 {
     padding-top: 0;
+}
+/*!! insertion de SCSS*/
+.split-character span {
+    display: inline-block;
+}
+
+.title span > span {
+   opacity: 0;
+    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
 }
 </style>    
 </head>
@@ -61,7 +81,6 @@
                     
                     <div class="co-et-regist"><!--parties connexion et inscripton-->
                         <a class="connect" data-rel="btn-connect" href="">Connexion</a><!--ici pour la connexion de l'utilisateur-->
-                        <p class="rien"></p>
                         <a class="registrer" data-rel="btn-registrer" href="">Inscription</a><!--ici pour l'inscription-->
                     </div>
                     
@@ -174,7 +193,7 @@
                     </div>
                 
                     <div class="contenu-a-affiche">
-                        <h1 class="intro-site">A découvrir sur AfterWatch</h1>
+                        <h1 class="title split-character intro-site">A découvrir sur After Watch</h1>
                     </div>
                     <div class="contenu-a-affiche">
                         <div id="contenu-a-affiche"></div>
@@ -184,7 +203,7 @@
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <a class="titre-section" href="https://www.allocine.fr" target="_blank">Actuellement à l'affiche</a>
+                                            <p>Actuellement à l'affiche</p>
                                         </h2>
                                     </div>
                                 </div>
@@ -348,10 +367,27 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script>
-        $('.carousel').carousel(
-            {}
-        )
-    </script>
+<script>
+    
+    (function() {
+      var elements, newContent = "";
+      elements = document.getElementsByClassName('split-character'); 
+      for (var element = 0; element < elements.length; ++element) { 
+        newContent += "<span>"
+        for (var character = 0; character < elements[element].innerText.length; character++) {
+          if (elements[element].innerText[character] !== " ") { 
+            newContent += "<span style='animation-delay: "+ 0.100*character + "s'>"+ elements[element].innerText[character] +"</span>";
+          }
+          else { 
+            newContent += "</span> <span>";
+          }
+        }
+        newContent += "</span>"
+        elements[element].innerHTML = newContent; 
+        newContent = ""; 
+      }
+      
+    })(); 
+</script>
 </body>
 </html>

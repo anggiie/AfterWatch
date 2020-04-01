@@ -30,7 +30,7 @@ video
     transition: 1s opacity;
 }
 
-#film 
+#films 
 { 
     font-weight:100; 
     background: rgba(0,0,0,0.3);
@@ -66,7 +66,7 @@ section
     display: flex;
     justify-content: space-between; 
 }
-#film button { 
+#films button { 
   display: block;
   width: 100%;
   padding: .4rem;
@@ -79,7 +79,7 @@ section
   cursor: pointer;
   transition: .3s background;
 }
-#film button:hover { 
+#films button:hover { 
    background: rgba(0,0,0,0.5);
 }
 
@@ -102,7 +102,6 @@ a:hover{
     top: 20%;
     left: 10%;
 }
-
 iframe
 {
     width:680px; 
@@ -126,10 +125,10 @@ iframe
 </section>
 
 <div class="b-annonce">
-    <iframe src='http://player.allocine.fr/19583604.html' ></iframe>   
+    <iframe src='http://player.allocine.fr/19583604.html' style='width:640px; height:360px' ></iframe>   
 </div>
 
-<div id="film">
+<div id="films">
     <div class="flexbutton">
         <div class="button">
           <form>
@@ -145,7 +144,7 @@ iframe
 <h1>Godzilla 2 Roi des monstres</h1>
 <article>
   <p><strong>Réalisateur(s):</strong> Michael Dougherty</p>
-  <p>L'agence crypto-zoologique Monarch doit faire face à une vague de monstres titanesques, comme Godzilla, 
+  <p><strong>Synopsis: </strong>L'agence crypto-zoologique Monarch doit faire face à une vague de monstres titanesques, comme Godzilla, 
       Mothra, Rodan et surtout le redoutable roi Ghidorah à trois têtes. 
       Un combat sans précédent entre ces créatures considérées jusque-là comme chimériques menace d'éclater. 
       Alors qu'elles cherchent toutes à dominer la planète, l'avenir même de l'humanité est en jeu… 
@@ -197,7 +196,7 @@ iframe
 
 <script>
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#godzilla button");
+var pauseButton = document.querySelector("#films button");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");

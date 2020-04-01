@@ -76,7 +76,7 @@ span
     height: 45px;
     position: relative;
     z-index: 1;
- box-sizing: content-box;
+    box-sizing: content-box;
 }
 .barre-recherche
 {
@@ -103,6 +103,7 @@ form
     border-radius: 15%;
     box-shadow: transparent;
     margin-left: 4%;
+    -webkit-margin-start: 20%;
 }
 .recherche-auto-flex
 {
@@ -127,9 +128,8 @@ form
     margin: 0;
     line-height: 18px;
     transition: all .3s ease;
-    -webkit-user-select: text
+    -webkit-user-select: text    
 }
-
 .rechercher
 {
     background-color: inherit;

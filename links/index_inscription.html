@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/index.css">
 
     <style>
-        
 .navig-main
 {
     border: 3px solid #009193;
@@ -88,6 +87,12 @@ button
     margin-top: 2%;
     border: 1px solid #009193;
     background-color: transparent;
+}
+.footer_de_merde
+{
+    margin-top: 5%;
+    padding-top: .5%;
+    border-top: 1px solid grey;
 }
 /*!! insertion de SCSS*/
 .split-character span {
@@ -173,10 +178,11 @@ button
                 </div>
 
             </div>
-
         </header>
 
-    <div class="main-contenu">
+        
+
+        <div class="main-contenu">
         <div class="contenu-main">
             
             <div class="contenu-a-affiche">
@@ -194,24 +200,57 @@ button
         </div>
         <div class="contactd">
             <label for="mdp">Mot de passe :</label>
-            <input type="mdp" id="mdp" name="user_mdp">
+            <input type="mdp" id="mail" name="user_mdp">
         </div>
         <div class="contactd">
-            <label for="confirmmdp">Confirmation :</label>
-            <input type="mdp" id="mdp" name="user_confirmmdp">
+            <label for="mdpconfirm">Confirmation :</label>
+            <input type="mdpconfirm" id="mail" name="user_mdpconfirm">
         </div>
+
         <div class="PopupSupport__Button">
         <button class="ButtonContainer PopupSupport__ButtonFile">
-        <input type="file" accept="image/*" name="file" multiple="" class="PopupSupport__InputFile"><img href="default/avatar.jpg" /></button>
+        <input type="file" accept="image/*" name="file" multiple="" class="PopupSupport__InputFile"></button>
         </div>
 
         <div class="button">
             <button class="Submit" type="submit">Inscription</button>
         </div>
     </form>
+        </div>
+        </div>
 
-</div>
-    </div>
+        <footer class="footer_de_merde">
+            <div id="contener_footer">
+
+                <div class="navig-list-footer">
+                    <ul class="navig-footer">
+                        <li class="navig-main-item">
+                            <a href="/">A propos</a>
+                        </li>
+                        <li class="navig-main-item">
+                            <a href="./index-nous-contacter.html">Nous contacter</a>
+                        </li>
+                        <li class="navig-main-item">
+                            <a href="/">Conditions d'utiliastion</a>
+                        </li>
+                        <li class="navig-main-item">
+                            <a href="/">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    
+</div>    
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -239,3 +278,4 @@ button
     </script>
 </body>
 </html>
+

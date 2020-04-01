@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/index.css">
 
     <style>
-
+        
 .navig-main
 {
     border: 3px solid #009193;
@@ -89,12 +89,6 @@ button
     border: 1px solid #009193;
     background-color: transparent;
 }
-.footer_de_merde
-{
-    margin-top: 5%;
-    padding-top: .5%;
-    border-top: 1px solid grey;
-}
 /*!! insertion de SCSS*/
 .split-character span {
     display: inline-block;
@@ -145,6 +139,12 @@ button
                             </div>
                         </div>
                     
+                    <div class="co-et-regist"><!--parties connexion et inscripton-->
+                        <a class="connect" data-rel="btn-connect" href="index_connexion.html">Connexion</a><!--ici pour la connexion de l'utilisateur-->
+                        <p class="rien"></p>
+                        <a class="registrer" data-rel="btn-registrer" href="index_inscription.html">Inscription</a><!--ici pour l'inscription-->
+                    </div>
+                    
                     </div>
 
                     <div class="bas">
@@ -173,11 +173,10 @@ button
                 </div>
 
             </div>
+
         </header>
 
-        
-
-        <div class="main-contenu">
+    <div class="main-contenu">
         <div class="contenu-main">
             
             <div class="contenu-a-affiche">
@@ -189,61 +188,51 @@ button
             <label for="name">Pseudo :</label>
             <input type="text" id="name" name="user_name">
         </div>
+        
         <div class="contactd">
-            <label for="mail">e-mail :</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-        <div class="contactd">
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-
-        <!-- ici bouton ajouter un fichier-->
-
-        <div class="PopupSupport__Button">
-        <button class="ButtonContainer PopupSupport__ButtonFile">
-        <input type="file" accept="image/*" name="file" multiple="" class="PopupSupport__InputFile"></button>
+            <label for="mdp">Mot de passe :</label>
+            <input type="mdp" id="mdp" name="user_mdp">
         </div>
 
         <div class="button">
-            <button class="Submit" type="submit">Envoyer le message</button>
+            <button class="Submit" type="submit">Connexion</button>
         </div>
     </form>
-        </div>
-        </div>
 
-        <footer class="footer_de_merde">
-            <div id="contener_footer">
+</div>
+    </div>
 
-                <div class="navig-list-footer">
-                    <ul class="navig-footer">
-                        <li class="navig-main-item">
-                            <a href="/">A propos</a>
-                        </li>
-                        <li class="navig-main-item">
-                            <a href="./index-nous-contacter.html">Nous contacter</a>
-                        </li>
-                        <li class="navig-main-item">
-                            <a href="/">Conditions d'utiliastion</a>
-                        </li>
-                        <li class="navig-main-item">
-                            <a href="/">Forum</a>
-                        </li>
-                    </ul>
-                </div>
+    <footer>
+        <div id="contener_footer">
 
-                <div class="icon">
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                </div>
+            <div class="navig-list-footer">
+                <ul class="navig-footer">
+                    <li class="navig-main-item">
+                        <a href="/">A propos</a>
+                    </li>
+                    <li class="navig-main-item">
+                        <a href="./links/index-nous-contacter.html">Nous contacter</a>
+                    </li>
+                    <li class="navig-main-item">
+                        <a href="/">Conditions d'utiliastion</a>
+                    </li>
+                    <li class="navig-main-item">
+                        <a href="/">Forum</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-    
-</div>    
 
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</div>    
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

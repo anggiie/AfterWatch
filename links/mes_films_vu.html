@@ -25,6 +25,26 @@
 {
     padding-top: 0;
 }
+/*!! insertion de SCSS*/
+.split-character span {
+    display: inline-block;
+}
+
+.title span > span {
+   opacity: 0;
+    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
 </style>
 </head>
 
@@ -95,7 +115,7 @@
             <div class="contenu-main">
             
                 <div class="contenu-a-affiche">
-                    <h1 class="intro-site">A découvrir sur After Watch</h1>
+                    <h1 class="title split-character intro-site">A découvrir sur AfterWatch</h1>
                 </div>
                 <div class="contenu-a-affiche">
                     <div id="contenu-a-affiche"></div>
@@ -104,9 +124,7 @@
                         <div class="section-film-vu">
                             <div class="film-a-affiche">
                                 <div class="a-affiche-resultats">
-                                    <h2 class="tout-voir-affiche">
-                                        <a class="titre-section" href="https://www.allocine.fr" target="_blank">Mes films vu</a>
-                                    </h2>
+                                    <h2 class="tout-voir-affiche">Mes films vu</h2>
                                 </div>
                             </div>
     
@@ -616,6 +634,25 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script>
+    (function() {
+        var elements, newContent = "";
+        elements = document.getElementsByClassName('split-character'); 
+        for (var element = 0; element < elements.length; ++element) { 
+        newContent += "<span>"
+        for (var character = 0; character < elements[element].innerText.length; character++) {
+        if (elements[element].innerText[character] !== " ") { 
+        newContent += "<span style='animation-delay: "+ 0.100*character + "s'>"+ elements[element].innerText[character] +"</span>";
+        }
+        else { 
+        newContent += "</span> <span>";
+        }
+        }
+        newContent += "</span>"
+        elements[element].innerHTML = newContent; 
+        newContent = ""; 
+        }
+        })(); 
+    </script>
 </body>
 </html>

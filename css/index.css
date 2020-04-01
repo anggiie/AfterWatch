@@ -307,12 +307,11 @@ h1
 .tout-voir-affiche
 {
     background-color: #009193;
-    width: max-content;
+    width: 10%;
     font-size: 24px;
     line-height: 36px;
-    vertical-align: middle;
 }
-h2 a
+h2 
 {
     display: inline;
     font-weight: inherit;

@@ -54,19 +54,25 @@ h2
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .2rem;
+    
+}
+a
+{
+  max-width: max-content;
 }
 section
 {
     border-top: 1px solid #8080809d;
 }
 
-.flexbutton 
+.flexbutton
 {
     margin: auto;
     display: flex;
     justify-content: space-between; 
 }
-#films button { 
+#films button, a
+{ 
   display: block;
   width: 100%;
   padding: .4rem;
@@ -83,7 +89,7 @@ section
    background: rgba(0,0,0,0.5);
 }
 
-.btn 
+.btn, a
 {
   display: inline-block;
   color: #fff;
@@ -155,7 +161,7 @@ iframe
 <p><strong>Genre:</strong> Action, Science fiction</p>        
 <p><strong>Scénariste(s):</strong> Michael Dougherty, Zach Shields, Max Borenstein</p>
 <p><strong>Acteur(s):</strong> Kyle Chandler, Vera Farmiga, Millie Bobby Brown</p>
-<p><a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=228997.html" target="_blank">En savoir plus</a>  
+<p><a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=228997.html" target="_blank">En savoir plus</a> </p> 
 </article>
 </section>
 
@@ -164,7 +170,6 @@ iframe
     <div class="button">
         <a class="a-voir" href="#" target="_blank">Voir les critiques</a>
     </div>
-    </p>
 
 </section>
 
@@ -184,7 +189,9 @@ iframe
     </p>
 
     <div class="button">
-        <a class="ajouter" href="#" target="_blank">Ajouter un commentaire</a>
+      <form>
+        <input class="Add button btn" type="button" value="Ajouter un commentaire">
+      </form>
     </div>
 </section>
 

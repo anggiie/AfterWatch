@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/Effethover.css">
     <link rel="stylesheet" href="./css/index.css">
-<style>
-body
+<style>    
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
+*
 {
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
+    font-family: Courgette;
 }
 h5
 {
@@ -19,16 +20,19 @@ h5
     font-size: 1em;
     text-align: center;
 }
-.navig-main
+.bas
 {
+    height: calc(-3% - 1%);
+}
+.navig-main
+{   
     border: 3px solid #009193;
     border-radius: 10%;
     padding-left: 1.5%;
 }
-
 .contenu-main
 {
-        padding-top: 0.5%;
+        padding-top: 2.5%;
         padding-bottom: 0;
 }
 .prise_de_tete
@@ -86,7 +90,7 @@ h5
                         
                         <div class="co-et-regist"><!--parties connexion et inscripton-->
                             <a class="connect" data-rel="btn-connect" href="./links/form_co_js.html">Connexion</a><!--ici pour la connexion de l'utilisateur-->
-                            <p class="rien"></p>
+                          
                             <a class="registrer" data-rel="btn-registrer" href="./links/form_inscr_js.html">Inscription</a><!--ici pour l'inscription-->
                         </div>
                         
@@ -199,7 +203,7 @@ h5
                     </div>
                 
                     <div class="contenu-a-affiche">
-                        <h1 class="title split-character intro-site">A découvrir sur After Watch</h1>
+                        <h1 class="title split-character intro-site">A découvrir sur AfterWatch</h1>
                     </div>
                     <div class="contenu-a-affiche">
                         <div id="contenu-a-affiche"></div>
@@ -209,8 +213,8 @@ h5
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link" href="https://www.google.fr" target="_blank">Tout voir</button>
-                                             <a class="titre-section" href="./links/index_a_l_affiche.html" target="_blank">Actuellement à l'affiche</a>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/index_a_l_affiche.html" target="_blank">Tout voir</a></button>
+                                            <h2 class="tout-voir-affiche">Actuellement à l'affiche</h2>
                                         </h2>
                                     </div>
                                 </div>
@@ -310,8 +314,8 @@ h5
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link" href="https://www.google.fr" target="_blank">Tout voir</button>
-                                             <a class="titre-section" href="./links/index_futures_sorties.html" target="_blank">Les futures sorties</a>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/index_futures_sorties.html" target="_blank">Tout voir</a></button>
+                                            <h2 class="tout-voir-affiche">Les futures sorties</h2>
                                         </h2>
                                     </div>
                                 </div>
@@ -411,8 +415,8 @@ h5
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link" href="https://www.google.fr" target="_blank">Tout voir</button>
-                                             <a class="titre-section" href="./links/mes_films_a_voir.html" target="_blank">Mes films à voir</a>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/mes_films_a_voir.html" target="_blank">Tout voir</a></button>
+                                            <h2 class="tout-voir-affiche">Mes films à voir</h2>
                                         </h2>
                                     </div>
                                 </div>
@@ -512,8 +516,8 @@ h5
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link" href="https://www.google.fr" target="_blank">Tout voir</button>
-                                             <a class="titre-section" href="./links/mes_films_vu.html" target="_blank">Mes films vu</a>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/mes_films_vu.html" target="_blank">Tout voir</a></button>
+                                            <h2 class="tout-voir-affiche">Mes films vu</h2>
                                         </h2>
                                     </div>
                                 </div>
@@ -630,14 +634,6 @@ h5
                                 <a href="/">Forum</a>
                             </li>
                         </ul>
-                    </div>
-
-                    <div class="icon">
-                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
         </footer>

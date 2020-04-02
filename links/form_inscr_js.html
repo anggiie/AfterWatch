@@ -12,6 +12,10 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
+*
+{
+    font-family: Courgette;
+} 
 .titre
 {
     text-align: center;
@@ -144,7 +148,6 @@ form {
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
     color: grey;
-    font-family: 'poppins', sans-serif;
 }
 .input-div.pass {
     margin-bottom: 4px;
@@ -171,7 +174,6 @@ a:hover {
     background-size: 200%;
     font-size: 1.2rem;
     color: #e7e7e7;
-    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     margin: 1rem 0;
     cursor: pointer;
@@ -270,8 +272,10 @@ a:hover {
                         <input type="password" class="input">
                     </div>
                 </div>
-                
-                <input type="submit" class="btn" value="Inscription">
+
+                <div>
+                <input type="submit" class="btn" value="Inscription"><input class="button btn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
+                </div>  
             </form>
         </div>
     </div>

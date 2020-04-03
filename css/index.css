@@ -154,11 +154,13 @@ form
     cursor: pointer;
     font-size: 18px;
     box-sizing: border-box;
+    border: none;
+    background-color: transparent;
 }
 .registrer
 {
     background-color: #009193;
-    border-radius: 10px;
+    border-radius: 15px;
     color: black;
     display: inline-block;
     font-size: 18px;

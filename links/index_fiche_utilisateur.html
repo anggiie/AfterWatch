@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Effethover.css">
+    <link rel="stylesheet" href="../css/fiche_utilisateur.css">
+
+</head>
+
+<body>
+<div class="wrapbody">
+<div class="rep-contenu-h"></div>
+
+<header class="fond-h">             
+<div class="partie-h-b">
+<div class="haut"> 
+<nav class="barre-menus">
+    <ul class="navig-main">
+    <li class="navig-main-item">
+    <a href="../index_accueil.html">Accueil</a>
+    </li>
+    <li class="navig-main-item">
+<a href="../links/index_a_l_affiche.html">A l'affiche</a>
+    </li>
+    <li class="navig-main-item">
+    <a href="../links/index_futures_sorties.html">Les futures sorties</a>
+    </li>
+    <li class="navig-main-item">
+    <a href="../links/mes_films_a_voir.html">Recommandations</a>
+    </li>
+    </ul>
+</nav>
+</div>
+</div>
+</header>
+
+           
+<div class="contenu-a-affiche">
+<h1 class="title split-character intro-site">AfterWatch</h1>
+ </div>
+
+       
+<div class="p-user">
+ <div><img src="../img/afterwatch_logo.jpg" height="150px" width="120px"></div>
+ <div>
+    <p><strong>Pseudo: </strong> TrucMuche</p>
+    <p><strong>Email:</strong> buble@buble.org </p>  
+ </div>
+</div>
+
+<div id="reviews">
+    <div class="flexbutton">
+        <div class="button">
+            <form>
+            <input class="film_a_voir button btn" type="button" value="Mes films à voir">
+            <input class="film_vu button btn" type="button" value="Mes films vu">
+            <input class="button btn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
+            </form>
+        </div>
+    </div> 
+        
+        
+ <section class="infos">
+        <h1 class="reviews">Mes critiques</h1>
+        <article>
+        <h2>Titre du film</h2>
+        <p><i> Nulla ut augue massa. Maecenas et leo nulla. Suspendisse ullamcorper neque a odio rhoncus fringilla. In ut vehicula diam. 
+            Sed iaculis suscipit cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sed sodales odio. 
+            Mauris a sem ullamcorper, facilisis magna sed, sollicitudin augue. Phasellus lectus quam, faucibus eu porta ut, porta et augue. Ut faucibus nisi magna, 
+            vel sodales lacus vestibulum porta. Donec dictum enim ligula, id condimentum nisi mattis malesuada. Nam elementum eros vitae sem viverra, sit amet vulputate mi varius. 
+            Sed nec metus non nulla laoreet tempus sit amet eget lorem. Sed lorem turpis, 
+            consectetur sit amet sem nec, posuere commodo orci. </i></p>
+        </article>
+</section>
+        
+        
+        
+            <div class="button">
+              <form>
+                <input class="Add button btn" type="button" value="Ajouter une critique">
+              </form>
+            </div>
+        </section>
+        </div>
+
+<!--            
+        <footer>
+                <div id="contener_footer">
+
+                    <div class="navig-list-footer">
+                        <ul class="navig-footer">
+                            <li class="navig-main-item">
+                                <a href="/">A propos</a>
+                            </li>
+                            <li class="navig-main-item">
+                                <a href="form_contact_js.html">Nous contacter</a>
+                            </li>
+                            <li class="navig-main-item">
+                                <a href="/">Conditions d'utiliastion</a>
+                            </li>
+                            <li class="navig-main-item">
+                                <a href="/">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+-->
+    
+</div>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    (function() {
+        var elements, newContent = "";
+        elements = document.getElementsByClassName('split-character'); 
+        for (var element = 0; element < elements.length; ++element) { 
+        newContent += "<span>"
+        for (var character = 0; character < elements[element].innerText.length; character++) {
+        if (elements[element].innerText[character] !== " ") { 
+        newContent += "<span style='animation-delay: "+ 0.100*character + "s'>"+ elements[element].innerText[character] +"</span>";
+        }
+        else { 
+        newContent += "</span> <span>";
+        }
+        }
+        newContent += "</span>"
+        elements[element].innerHTML = newContent; 
+        newContent = ""; 
+        }
+        })(); 
+    </script>
+</body>
+</html>

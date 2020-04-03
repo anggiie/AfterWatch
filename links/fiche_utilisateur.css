@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
+*
+{
+    font-family: Courgette;
+} 
+html
+{
+    max-width: 99%;
+}
+body
+{
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 18px;
+    height: 100%;
+}
+.wrapbody
+{
+    display: flex;
+    position: relative;
+    min-height: 450px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+.contenu-a-affiche
+{
+    padding-top: 6%;
+    padding-left: 8%;
+}
+.fond-h /*ici pour modifier le menu*/
+{
+    background-color: #e7e7e7;
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    box-sizing: border-box;
+}
+.haut /*ici pour modifier le menu*/
+{
+    margin-top: 1%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.navig-main
+{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#reviews 
+{ 
+    font-weight:100; 
+    color: green;
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 800px;
+    margin:2rem;
+    float: right;
+    font-size: 1.2rem;
+    max-height: 100%;
+}
+.reviews
+{
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: .8%;
+  letter-spacing: .3rem;
+}
+h2
+{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .2rem;   
+}
+#reviews button, a
+{ 
+  display: block;
+  width: 100%;
+  padding: .4rem;
+  border: none; 
+  font-size: 1.3rem;
+  color: green;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#reviews button:hover { 
+   background: yellow;
+}
+.btn, a
+{
+text-decoration: none;
+
+  transition: .6s background; 
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+.p-user
+{
+    float: left;
+    position: fixed;
+    top: 25%;
+    left: 10%;
+}
+.info
+{
+    justify-content: space-around;
+}
+/*!! insertion de SCSS*/
+.split-character span {
+    display: inline-block;
+}
+
+.title span > span {
+   opacity: 0;
+    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}

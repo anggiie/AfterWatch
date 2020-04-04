@@ -7,59 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/Effethover.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/form.search.style.scss">
+    <link rel="stylesheet" href="./css/navbar_accueil.css">
+
+    <link rel="stylesheet" href="./css/index_accueil.css">
 <style>    
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
 *
-{
-    font-family: Courgette;
-}
-h5
-{
-    color: #009193;
-    font-size: 1em;
-    text-align: center;
-}
-.bas
-{
-    height: calc(-3% - 1%);
-}
-.navig-main
-{   
-    border: 3px solid #009193;
-    border-radius: 10%;
-    padding-left: 1.5%;
-}
-.contenu-main
-{
-        padding-top: 2.5%;
-        padding-bottom: 0;
-}
-.prise_de_tete
-{
-    padding-top: 0;
-}
-/*!! insertion de SCSS*/
-.split-character span {
-    display: inline-block;
-}
-
-.title span > span {
-   opacity: 0;
-    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
-}
-
-@keyframes flipAnimation {
-    from {
-        transform: scale(-1, 1);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-}
-</style>  
+</style>
 </head>
 
 <body>
@@ -79,11 +34,11 @@ h5
                             <div class="barre-recherche">
                                 <div id="recherche-h">
                                     <div class="recherche-auto-flex">   
-                                    <form>
-                                    <input list="films" class="h-recherche" type="search" size="75%" id="site-search" name="searchFilms" autocomplete="off" placeholder="recherche un film.." aria-label="Search through site content">
-                                    <datalist id="films"></datalist>
-                                    <button class="buttonr">Rechercher</button>
-                                    </form>
+                                        <form class="search">
+                                            <input class="searchTerm" list="films" type="search" size="75%" id="site-search" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content" name="searchFilms">
+                                            <datalist id="films"></datalist>
+                                            <button class="searchButton">Rechercher</button>
+                                            </form>  
                                     </div>
                                 </div>
                             </div>
@@ -97,32 +52,32 @@ h5
                         
                         </div>
 
-                        <div class="bas">
-                            <nav class="barre-menus">
-                                <div class="barre-menus-navig">
-                                    <div class="navig-list">
-                                        <ul class="navig-main">
-                                            <li class="navig-main-item">
-                                                <a href="./links/index_a_l_affiche.html">A l'affiche</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="./links/index_futures_sorties.html">Les futures sorties</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="./links/mes_films_a_voir.html">Recommandations</a>
-                                            </li>
-                                            <li class="navig-main-item">
-                                                <a href="./links/mes_films_vu.html">Mes films</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
+                       
+                        <div class="nav">
+                        <input type="checkbox" id="nav-check">
+                        <div class="nav-header">
                         </div>
-
+                        <div class="nav-btn">
+                        <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </label>
+                        </div>
+        
+                        <div class="nav-links">
+                        
+                        <a href="./links/index_a_l_affiche.html">A l'affiche</a>
+                        <a href="./links/index_futures_sorties.html">Les futures sorties</a>
+                        <a href="./links/mes_films_a_voir.html">Recommandations</a>
+                        <a href="./links/mes_films_vu.html">Mes films</a>
+                        </div>
                     </div>
+                </div>
 
                 </div>
+
+                
             </header>
             
             <div class="main-contenu">
@@ -638,14 +593,12 @@ h5
                     </div>
                 </div>
         </footer>
-    </div>    
-
+    </div>   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="js/form.search.js" type="script"></script>
     <script>
-    
         (function() {
           var elements, newContent = "";
           elements = document.getElementsByClassName('split-character'); 
@@ -663,7 +616,6 @@ h5
             elements[element].innerHTML = newContent; 
             newContent = ""; 
           }
-          
         })(); 
         </script>
 </body>

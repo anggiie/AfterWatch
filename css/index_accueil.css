@@ -2,6 +2,9 @@ html
 {
     max-width: 99%;
 }
+*{
+    font-family: "Courgette";
+}
 body
 {
     background-color: #e7e7e7;
@@ -95,14 +98,7 @@ form
     display:flex;
     width: 200%;
 }
-.buttonr
-{
-    background-color: #009193;
-    border-radius: 15%;
-    box-shadow: transparent;
-    margin-left: 4%;
-    -webkit-margin-start: 20%;
-}
+
 .recherche-auto-flex
 {
     align-items: center;
@@ -422,4 +418,46 @@ section
 {
     background-color: red;
     color:grey;
+}
+ 
+.bas
+{
+    height: calc(-3% - 1%);
+}
+.navig-main
+{   
+    border: 3px solid #009193;
+    border-radius: 10%;
+    padding-left: 1.5%;
+}
+.contenu-main
+{
+        padding-top: 2.5%;
+        padding-bottom: 0;
+}
+.prise_de_tete
+{
+    padding-top: 0;
+}
+.contenu_p_u
+{min-height: 20em;}
+/*!! insertion de SCSS*/
+.split-character span {
+    display: inline-block;
+}
+
+.title span > span {
+   opacity: 0;
+    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
 }

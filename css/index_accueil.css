@@ -152,19 +152,41 @@ form
     border: none;
     background-color: transparent;
 }
-.registrer
+/* modifications des boutons du header */
+.registrer.btn
 {
     background-color: #009193;
     border-radius: 15px;
     color: black;
     display: inline-block;
     font-size: 18px;
-    margin-left: 10px;
+    margin: 0 0 0.5em;
     outline: 0;
     padding: 10px 20px;
     text-decoration: none;
     box-sizing: border-box;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-transform: uppercase;
+     text-align: center;
+    text-decoration: none;   
 }
+.btn:hover, .btn:focus 
+{
+    opacity: 0.8;
+}
+.btn:active 
+{
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+/* fin des modifs boutons du header */
 .bas
 {
     height: 40px;

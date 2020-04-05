@@ -4,36 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>A l'affiche</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Effethover.css">
+    <link rel="stylesheet" href="../css/form.search.style.scss">
     <link rel="stylesheet" href="../css/index.css">
-    
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
-*
-{
-    font-family: Courgette;
-}    
-.bas
-{
-    height: calc(-3% - 1%);
-}
-.navig-main
-{
-    border: 3px solid #009193;
-    border-radius: 10%;
-    padding-left: 1.5%;
-}
-.contenu-main
-    {
-        padding-top: 2.5%;
-        padding-bottom: 0;
-    }
-.prise_de_tete
-{
-    padding-top: 0;
-}
+<style>    
+
 /*!! insertion de SCSS*/
 .split-character span {
     display: inline-block;
@@ -54,68 +31,68 @@
         opacity: 1;
     }
 }
-</style>    
+</style>  
 </head>
 
 <body>
 
-    <div class="wrapbody">
+<div class="wrapbody">
+<div class="rep-contenu-h"></div>
 
-        <div class="rep-contenu-h"></div>
+<header class="fond-h">
+<div class="contenu-h">
+<a href="../index_accueil.html"><img class="logo-med logo" src="../img/afterwatch_logo.png"></img></a>
 
-        <header class="fond-h">
+                        <div class="partie-h-b">
 
-            <div class="contenu-h">
-                <a href="../index_accueil.html"><img class="logo-med logo" src="../img/afterwatch_logo.png"></img></a>
-                <div class="partie-h-b">
-
-                    <div class="haut">
-                        <div class="barre-recherche">
+                            <div class="haut">
+                            <div class="barre-recherche">
                             <div id="recherche-h">
-                                <div class="recherche-auto-flex">   
-                                <form>
-                                <input list="films" class="h-recherche" type="search" size="75%" id="site-search" name="searchFilms" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content">
-                                <datalist id="films"></datalist>
-                                <button class="buttonr">Rechercher</button>
-                                </form>
-                                </div>
-                            </div>
+                            <div class="recherche-auto-flex">   
+                            <form class="search">
+                            <input class="searchTerm" list="films" type="search" size="75%" id="site-search" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content" name="searchFilms">
+                            <datalist id="films"></datalist>
+                            <button class="searchButton">Rechercher</button>
+                            </form>  
                         </div>
-                    
-                    <div class="co-et-regist"><!--parties connexion et inscripton-->
-                        <button class="connect" type="button" data-rel="btn-connect"><a href="./form_co_js.html" target="_blank">Connexion</a></button>
-                        <button class="registrer" type="button" data-rel="btn-registrer"><a href="./form_inscr_js.html" target="_blank">Inscription</a></button>
-                    </div>
-                    
-                    </div>
+                        </div>
+                        </div>
+                            <div class="co-et-regist"><!--parties connexion et inscripton-->
 
-                    <div class="bas">
-                        <nav class="barre-menus">
-                            <div class="barre-menus-navig">
-                                <div class="navig-list">
-                                    <ul class="navig-main">
-                                        <li class="navig-main-item">
-                                            <a href="../index_accueil.html">Accueil</a>
-                                        </li>
-                                        <li class="navig-main-item">
-                                            <a href="../links/index_a_l_affiche.html">A l'affiche</a>
-                                        </li>
-                                        <li class="navig-main-item">
-                                            <a href="../links/mes_films_a_voir.html">Mes films à voir</a>
-                                        </li>
-                                        <li class="navig-main-item">
-                                            <a href="../links/mes_films_vu.html">Mes films vu</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <button class="registrer" type="button" data-rel="btn-connect"><a href="./form_co_js.html" target="_blank">Connexion</a></button>
+                                <button class="registrer" type="button" data-rel="btn-connect"><a href="/" target="_blank">Déconnexion</a></button>
+                                <button class="registrer" type="button" data-rel="btn-registrer"><a href="./form_inscr_js.html" target="_blank">Inscription</a></button>
                             </div>
-                        </nav>
+                        
+                        </div>
+
+                        <div class="bas">
+                            <nav class="barre-menus">
+                                <div class="barre-menus-navig">
+                                    <div class="navig-list">
+                                        <ul class="navig-main">
+                                            <li class="navig-main-item">
+                                                <a href="../index_accueil.html">Accueil</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="./index_a_l_affiche.html">A l'affiche</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="index_recommancations.html">Recommandations</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="./index_mes_films.html">Mes films</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
-        </header>
+            </header>
             
             <div class="main-contenu">
 
@@ -133,7 +110,7 @@
                                 <h5>Essaie</h5>
                                 <h6>Essaie</h6>
                                 <p>essai <strong>d'ajout de texte</strong> <i>sur une image</i> </p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -141,7 +118,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -149,7 +126,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -157,7 +134,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -165,7 +142,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -173,7 +150,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -181,7 +158,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Essaie</h5>
                                 <p>essai d'ajout de texte sur une image</p>
-                                <a href="https://www.google.fr/" target="_blank">Cliquer ici</a>
+                                <a href="/" target="_blank">Cliquer ici</a>
                             </div>
                         </div>
                         </div>
@@ -189,8 +166,7 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#xl-carousel
-                         " role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#xl-carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                         </a>
@@ -206,10 +182,9 @@
                             <div class="section-film-vu">
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
-                                        <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link"><a href="../index_accueil.html" target="_blank">Accueil</a></button>
-                                            <h2 class="tout-voir-affiche">Les futures sorties</h2>
-                                        </h2>
+                                    
+                            <h2 class="tout-voir-affiche">Les futures sorties</h2>
+                                        
                                     </div>
                                 </div>
     
@@ -224,7 +199,7 @@
                                                 </div>
                                                 <div class="face face2">
                                                     <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -241,7 +216,7 @@
                                                 </div>
                                                 <div class="face face2">
                                                     <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -258,7 +233,7 @@
                                                 </div>
                                                 <div class="face face2">
                                                     <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -275,7 +250,7 @@
                                                 </div>
                                                 <div class="face face2">
                                                     <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
                                                     </div>
                                                 </div>
                                                 </div>
@@ -292,43 +267,198 @@
                                                 </div>
                                                 <div class="face face2">
                                                     <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
                                                     </div>
                                                 </div>
                                                 </div>
                                             </div>
                                         </a>
-                                    </li>
-                                    <li class="img-a-affiche">
-                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
-                                            <div class="card">
-                                                <div class="face face1">
-                                                    <div class="content">
-                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
-                                                    </div>
-                                                </div>
-                                                <div class="face face2">
-                                                    <div class="content">    
-                                                    <a href="../links/index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
+                                    </li> 
                                 </ul>
-                                <ul class="contenu-film-affiche">
 
+                                <ul class="contenu-film-affiche">
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                </ul>
+
+                                <ul class="contenu-film-affiche">
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="img-a-affiche">
+                                        <a class="a-film film-a" href="#" data-rel="button"><div class="container">
+                                            <div class="card">
+                                                <div class="face face1">
+                                                    <div class="content">
+                                                      <img class="" data-rel="poster" alt="Affiche Godzilla II" src="../img/0199399.jpg.webp" width="150" height="204"/>
+                                                    </div>
+                                                </div>
+                                                <div class="face face2">
+                                                    <div class="content">    
+                                                    <a href="./index_infos_film.html"><h5>Mais qu'est-ce que j'ai fait au bon Dieu pour avoir une femme qui boit dans les cafés avec les hommes?</h></a>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li> 
                                 </ul>
                             </div>
                         </section>
 
                     </div>
                 </div>
-                
             </div>
     
-            <footer>
+        <footer>
                 <div id="contener_footer">
 
                     <div class="navig-list-footer">
@@ -337,7 +467,7 @@
                                 <a href="/">A propos</a>
                             </li>
                             <li class="navig-main-item">
-                                <a href="../links/form_contact_js.html">Nous contacter</a>
+                                <a href="./form_contact_js.html">Nous contacter</a>
                             </li>
                             <li class="navig-main-item">
                                 <a href="/">Conditions d'utiliastion</a>
@@ -349,14 +479,13 @@
                     </div>
                 </div>
         </footer>
-    </div>    
-
+    </div>   
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/form.search.js" type="script"></script>
 
     <script>
-    
         (function() {
           var elements, newContent = "";
           elements = document.getElementsByClassName('split-character'); 
@@ -364,7 +493,7 @@
             newContent += "<span>"
             for (var character = 0; character < elements[element].innerText.length; character++) {
               if (elements[element].innerText[character] !== " ") { 
-                newContent += "<span style='animation-delay: "+ 0.100*character + "s'>"+ elements[element].innerText[character] +"</span>";
+                newContent += "<span style='animation-delay: "+ 0.035*character + "s'>"+ elements[element].innerText[character] +"</span>";
               }
               else { 
                 newContent += "</span> <span>";
@@ -374,8 +503,7 @@
             elements[element].innerHTML = newContent; 
             newContent = ""; 
           }
-          
         })(); 
-    </script>
+        </script>
 </body>
 </html>

@@ -4,80 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/Effethover.css">
     <link rel="stylesheet" href="./css/form.search.style.scss">
-    <link rel="stylesheet" href="./css/navbar_accueil.css">
-
-    <link rel="stylesheet" href="./css/index_accueil.css">
+    <link rel="stylesheet" href="./css/index.css">
 <style>    
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
-*
-</style>
+
+/*!! insertion de SCSS*/
+.split-character span {
+    display: inline-block;
+}
+
+.title span > span {
+   opacity: 0;
+    animation: flipAnimation 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3 forwards;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+</style>  
 </head>
 
 <body>
 
-    <div class="wrapbody">
+<div class="wrapbody">
+<div class="rep-contenu-h"></div>
 
-        <div class="rep-contenu-h"></div>
+<header class="fond-h">
+<div class="contenu-h">
+<a href="./index_accueil.html"><img class="logo-med logo" src="./img/afterwatch_logo.png"></img></a>
 
-            <header class="fond-h">
+                        <div class="partie-h-b">
 
-                <div class="contenu-h">
-                <a href="./index_accueil.html"><img class="logo-med logo" src="./img/afterwatch_logo.png"></img></a>
-
-                    <div class="partie-h-b">
-
-                        <div class="haut">
+                            <div class="haut">
                             <div class="barre-recherche">
-                                <div id="recherche-h">
-                                    <div class="recherche-auto-flex">   
-                                        <form class="search">
-                                            <input class="searchTerm" list="films" type="search" size="75%" id="site-search" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content" name="searchFilms">
-                                            <datalist id="films"></datalist>
-                                            <button class="searchButton">Rechercher</button>
-                                            </form>  
+                            <div id="recherche-h">
+                            <div class="recherche-auto-flex">   
+                            <form class="search">
+                            <input class="searchTerm" list="films" type="search" size="75%" id="site-search" autocomplete="on" placeholder="recherche un film.." aria-label="Search through site content" name="searchFilms">
+                            <datalist id="films"></datalist>
+                            <button class="searchButton">Rechercher</button>
+                            </form>  
+                        </div>
+                        </div>
+                        </div>
+                            <div class="co-et-regist">
+
+                                <button class="registrer" type="button" data-rel="btn-connect"><a href="./form_co_js.html" target="_blank">Connexion</a></button>
+                                <button class="registrer" type="button" data-rel="btn-connect"><a href="/" target="_blank">Déconnexion</a></button>
+                                <button class="registrer" type="button" data-rel="btn-registrer"><a href="./form_inscr_js.html" target="_blank">Inscription</a></button>
+                            </div>
+                        
+                        </div>
+
+                        <div class="bas">
+                            <nav class="barre-menus">
+                                <div class="barre-menus-navig">
+                                    <div class="navig-list">
+                                        <ul class="navig-main">
+                                            <li class="navig-main-item">
+                                                <a href="./links/index_a_l_affiche.html">A l'affiche</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="./links/index_futures_sorties.html">Les futures sorties</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="./links/index_recommancations.html">Recommandations</a>
+                                            </li>
+                                            <li class="navig-main-item">
+                                                <a href="./links/index_mes_films.html">Mes films</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        
-                            <div class="co-et-regist"><!--parties connexion et inscripton-->
-
-                                <button class="registrer btn" type="button" data-rel="btn-connect"><a href="./form_co_js.html" target="_blank">Connexion</a></button>
-                                <button class="registrer btn" type="button" data-rel="btn-connect"><a href="/" target="_blank">Déconnexion</a></button>
-                                <button class="registrer btn" type="button" data-rel="btn-registrer"><a href="./form_inscr_js.html" target="_blank">Inscription</a></button>
-                            </div>
-                        
+                            </nav>
                         </div>
 
-                       
-                        <div class="nav">
-                        <input type="checkbox" id="nav-check">
-                        <div class="nav-header">
-                        </div>
-                        <div class="nav-btn">
-                        <label for="nav-check">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        </label>
-                        </div>
-        
-                        <div class="nav-links">
-                        
-                        <a href="./links/index_a_l_affiche.html">A l'affiche</a>
-                        <a href="./links/index_futures_sorties.html">Les futures sorties</a>
-                        <a href="./links/mes_films_a_voir.html">Recommandations</a>
-                        <a href="./links/mes_films_vu.html">Mes films</a>
-                        </div>
                     </div>
-                </div>
 
                 </div>
-
-                
             </header>
             
             <div class="main-contenu">
@@ -371,8 +385,8 @@
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/mes_films_a_voir.html" target="_blank">Tout voir</a></button>
-                                            <h2 class="tout-voir-affiche">Mes films à voir</h2>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/index_recommancations.html" target="_blank">Tout voir</a></button>
+                                            <h2 class="tout-voir-affiche">Les recommandations</h2>
                                         </h2>
                                     </div>
                                 </div>
@@ -472,7 +486,7 @@
                                 <div class="film-a-affiche">
                                     <div class="a-affiche-resultats">
                                         <h2 class="tout-voir-affiche">
-                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/mes_films_vu.html" target="_blank">Tout voir</a></button>
+                                            <button class="tout-voir" type="button" data-rel="link"><a href="./links/index_mes_films.html" target="_blank">Tout voir</a></button>
                                             <h2 class="tout-voir-affiche">Mes films vu</h2>
                                         </h2>
                                     </div>
@@ -567,6 +581,7 @@
                                 </ul>
                             </div>
                         </section>
+                        
                     </div>
                 </div>
                 
@@ -597,7 +612,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/form.search.js" type="script"></script>
+    <script src="./js/form.search.js" type="script"></script>
+
     <script>
         (function() {
           var elements, newContent = "";
